@@ -1,3 +1,40 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-background",
+      "description": "Subtle background of the TributoHub dashboard interface.",
+      "imageUrl": "https://picsum.photos/seed/hero/1920/1080",
+      "imageHint": "dashboard interface"
+    },
+    {
+      "id": "debt-analysis",
+      "description": "Screenshot of the debt analysis with AI report.",
+      "imageUrl": "https://picsum.photos/seed/debt/1200/800",
+      "imageHint": "financial report"
+    },
+    {
+      "id": "public-presentation",
+      "description": "Screenshot of the public presentation generated for the client.",
+      "imageUrl": "https://picsum.photos/seed/presentation/1200/800",
+      "imageHint": "web presentation"
+    },
+    {
+      "id": "form-solution",
+      "description": "Screenshot of the proposal form's legal solution section.",
+      "imageUrl": "https://picsum.photos/seed/solution/800/600",
+      "imageHint": "form interface"
+    },
+    {
+      "id": "form-comparison",
+      "description": "Screenshot of the proposal form's before-and-after section.",
+      "imageUrl": "https://picsum.photos/seed/comparison/800/600",
+      "imageHint": "data comparison"
+    },
+    {
+      "id": "form-investment",
+      "description": "Screenshot of the proposal form's investment section.",
+      "imageUrl": "https://picsum.photos/seed/investment/800/600",
+      "imageHint": "pricing form"
+    }
+  ]
 }
