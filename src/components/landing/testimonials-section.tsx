@@ -5,17 +5,17 @@ import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 const testimonials = [
   {
     text: 'O TributoHub mudou a forma como apresento meu trabalho. Os clientes finalmente entendem o valor da estratégia tributária, e minha taxa de conversão aumentou significativamente.',
-    author: 'Dr. Fulano de Tal',
-    title: 'Sócio em [Nome Fictício Advocacia]',
-    avatar: 'FT',
+    author: 'Camille Walendorff',
+    title: 'Sócia em Franzoi Advogados',
+    avatar: 'CW',
     avatarImage: 'https://i.pravatar.cc/150?u=a042581f4e29026704d',
   },
   {
     text: 'A capacidade de gerar um diagnóstico com IA na primeira reunião é um diferencial competitivo absurdo. Economiza meu tempo e estabelece autoridade imediata.',
-    author: 'Dra. Ciclana de Souza',
-    title: 'Advogada Tributarista',
-    avatar: 'CS',
-    avatarImage: 'https://i.pravatar.cc/150?u=a042581f4e29026705d',
+    author: 'Matheus Trindade',
+    title: 'Advogado Tributarista',
+    avatar: 'MT',
+    avatarImage: 'https://i.pravatar.cc/150?u=a042581f4e29026706d',
   },
 ];
 
