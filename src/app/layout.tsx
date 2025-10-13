@@ -31,6 +31,11 @@ export const metadata: Metadata = {
     locale: 'pt_BR',
     type: 'website',
   },
+  icons: {
+    icon: 'https://i.imgur.com/916tyD9.png',
+    shortcut: 'https://i.imgur.com/916tyD9.png',
+    apple: 'https://i.imgur.com/916tyD9.png',
+  },
 };
 
 export default function RootLayout({
