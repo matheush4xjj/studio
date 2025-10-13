@@ -1,28 +1,13 @@
-import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { AnimatedWrapper } from '@/components/landing/animated-wrapper';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Link from 'next/link';
 
 export function HeroSection() {
-  const heroImage = PlaceHolderImages.find((p) => p.id === 'hero-background');
-
   return (
-    <section className="relative w-full h-[calc(100vh-3.5rem)] flex items-center justify-center text-center overflow-hidden">
-      {heroImage && (
-        <Image
-          src={heroImage.imageUrl}
-          alt={heroImage.description}
-          fill
-          className="object-cover opacity-10"
-          priority
-          data-ai-hint={heroImage.imageHint}
-        />
-      )}
-      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
+    <section className="relative w-full h-[calc(80vh-3.5rem)] flex items-center justify-center text-center overflow-hidden">
       <div className="relative z-10 container px-4">
         <AnimatedWrapper>
-          <h1 className="text-4xl md:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-primary via-blue-400 to-white leading-tight tracking-tighter">
+          <h1 className="text-4xl md:text-7xl font-black text-foreground leading-tight tracking-tighter">
             A nova cara da advocacia tributária.
           </h1>
         </AnimatedWrapper>

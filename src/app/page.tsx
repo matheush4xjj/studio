@@ -1,11 +1,8 @@
-import { CtaSection } from '@/components/landing/cta-section';
-import { DynamicFormSection } from '@/components/landing/dynamic-form-section';
-import { FeatureShowcaseSection } from '@/components/landing/feature-showcase-section';
-import { Footer } from '@/components/landing/footer';
 import { Header } from '@/components/landing/header';
 import { HeroSection } from '@/components/landing/hero-section';
-import { ProblemSection } from '@/components/landing/problem-section';
-import { DiagnosticTool } from '@/components/landing/diagnostic-tool';
+import { FeaturesSection } from '@/components/landing/features-section';
+import { CtaSection } from '@/components/landing/cta-section';
+import { Footer } from '@/components/landing/footer';
 
 export default function Home() {
   return (
@@ -13,10 +10,7 @@ export default function Home() {
       <Header />
       <main className="flex-grow">
         <HeroSection />
-        <ProblemSection />
-        <FeatureShowcaseSection />
-        <DynamicFormSection />
-        <DiagnosticTool />
+        <FeaturesSection />
         <CtaSection />
       </main>
       <Footer />
