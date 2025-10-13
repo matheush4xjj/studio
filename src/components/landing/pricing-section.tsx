@@ -62,16 +62,16 @@ export function PricingSection() {
             Planos pensados para cada fase do seu escritório
           </h2>
         </AnimatedWrapper>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
           {plans.map((plan, index) => (
             <AnimatedWrapper
               key={index}
               delay={index * 100}
-              className={cn(plan.isPopular ? 'transform lg:scale-105' : '')}
+              className={cn(plan.isPopular ? 'border-accent-2/80 rounded-lg' : '')}
             >
               <Card
                 className={cn(
-                  'w-full flex flex-col text-left rounded-lg shadow-lg bg-card text-card-foreground border border-transparent',
+                  'w-full h-full flex flex-col text-left rounded-lg shadow-lg bg-card text-card-foreground border border-transparent',
                   {
                     'border-accent-2/80': plan.isPopular,
                   }
