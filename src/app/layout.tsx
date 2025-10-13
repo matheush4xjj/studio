@@ -22,10 +22,10 @@ export const metadata: Metadata = {
     siteName: 'TributoHub',
     images: [
       {
-        url: 'https://i.imgur.com/202IxZ3.jpeg', // LINK DA IMAGEM
+        url: 'https://i.imgur.com/916tyD9.png', // Logo do TributoHub
         width: 1200,
         height: 630,
-        alt: 'Uma balança da justiça representando a advocacia tributária.',
+        alt: 'Logo do TributoHub',
       },
     ],
     locale: 'pt_BR',
