@@ -5,6 +5,7 @@ import { Footer } from '@/components/landing/footer';
 import { Header } from '@/components/landing/header';
 import { HeroSection } from '@/components/landing/hero-section';
 import { ProblemSection } from '@/components/landing/problem-section';
+import { DiagnosticTool } from '@/components/landing/diagnostic-tool';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <ProblemSection />
         <FeatureShowcaseSection />
         <DynamicFormSection />
+        <DiagnosticTool />
         <CtaSection />
       </main>
       <Footer />
