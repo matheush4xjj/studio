@@ -135,13 +135,13 @@ export function DynamicFormSection() {
   return (
     <section className="py-32">
         <div className="container grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-32">
-          <div className="flex flex-col justify-between space-y-72">
+          <div className="flex flex-col justify-center space-y-8">
             {steps.map((step, index) => (
               <div
                 key={index}
                 ref={(el) => (stepRefs.current[index] = el)}
                 data-step-index={index}
-                className="space-y-4 py-16 min-h-[30vh] flex flex-col justify-center"
+                className="space-y-4 min-h-[30vh] flex flex-col justify-center text-center lg:text-left"
               >
                 <div
                     className="transition-opacity duration-300"
@@ -150,7 +150,7 @@ export function DynamicFormSection() {
                     <h3 className="text-3xl md:text-4xl font-bold tracking-tight text-primary">
                     {step.title}
                     </h3>
-                    <p className="text-lg text-foreground/70">{step.description}</p>
+                    <p className="text-lg text-foreground/70 max-w-md mx-auto lg:mx-0">{step.description}</p>
                 </div>
               </div>
             ))}
