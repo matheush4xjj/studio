@@ -14,8 +14,8 @@
     },
     {
       "id": "public-presentation",
-      "description": "Screenshot of the public presentation generated for the client.",
-      "imageUrl": "https://picsum.photos/seed/presentation/1200/800",
+      "description": "Screenshot da lista de propostas ou formulário.",
+      "imageUrl": "https://i.imgur.com/HATuhNX.png",
       "imageHint": "web presentation"
     },
     {
