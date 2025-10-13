@@ -35,8 +35,8 @@ export function BenefitsSection() {
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
           {benefits.map((benefit, index) => (
             <AnimatedWrapper key={index} delay={index * 100}>
-              <Card className="h-full bg-card/60 border-transparent hover:border-primary/20 transition-colors flex flex-col text-center items-center">
-                <CardHeader>
+              <Card className="h-full bg-card/60 border-transparent hover:border-primary/20 transition-colors flex flex-col text-center">
+                <CardHeader className="items-center">
                   {benefit.icon}
                   <CardTitle className="mt-4 text-xl">{benefit.title}</CardTitle>
                 </CardHeader>
