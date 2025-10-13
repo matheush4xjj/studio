@@ -53,6 +53,14 @@ const plans = [
   },
 ];
 
+const WHATSAPP_NUMBER = '5511999999999'; // Substitua pelo seu número de WhatsApp
+
+const generateWhatsAppLink = (planName: string, price: number) => {
+  const message = `Olá! Gostaria de saber mais sobre o Plano ${planName} do TributoHub, no valor de R$${price}/mês.`;
+  const encodedMessage = encodeURIComponent(message);
+  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
+};
+
 export function PricingSection() {
   return (
     <section id="pricing" className="py-20 md:py-32">
@@ -116,7 +124,12 @@ export function PricingSection() {
                 </CardContent>
                 <CardFooter className="p-6 mt-auto">
                   <Button asChild className="w-full" size="lg">
-                    <Link href="#cta">Escolher Plano</Link>
+                    <Link
+                      href={generateWhatsAppLink(plan.name, plan.price)}
+                      target="_blank"
+                    >
+                      Escolher Plano
+                    </Link>
                   </Button>
                 </CardFooter>
               </Card>
