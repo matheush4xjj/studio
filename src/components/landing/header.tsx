@@ -8,9 +8,15 @@ export function Header() {
         <Link href="/" className="flex items-center space-x-2">
           <span className="font-bold text-lg">TributoHub</span>
         </Link>
+        <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
+            <Link href="#features" className="text-foreground/60 transition-colors hover:text-foreground/80">Funcionalidades</Link>
+            <Link href="#benefits" className="text-foreground/60 transition-colors hover:text-foreground/80">Benefícios</Link>
+            <Link href="#testimonials" className="text-foreground/60 transition-colors hover:text-foreground/80">Depoimentos</Link>
+            <Link href="#faq" className="text-foreground/60 transition-colors hover:text-foreground/80">FAQ</Link>
+        </nav>
         <nav>
           <Button asChild size="sm">
-            <Link href="#cta">Descubra o TributoHub</Link>
+            <Link href="#cta">Comece a Usar</Link>
           </Button>
         </nav>
       </div>

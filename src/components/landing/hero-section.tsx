@@ -20,7 +20,7 @@ export function HeroSection() {
         </AnimatedWrapper>
         <AnimatedWrapper delay={400}>
           <Button asChild size="lg" className="mt-8">
-            <Link href="#cta">Descubra o TributoHub</Link>
+            <Link href="#features">Descubra o TributoHub</Link>
           </Button>
         </AnimatedWrapper>
       </div>
