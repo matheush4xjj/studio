@@ -81,7 +81,7 @@ export function FeaturesSection() {
   };
 
   return (
-    <section id="features" className="py-20 md:py-32">
+    <section id="features" className="py-20 md:py-32 bg-transparent">
       <div className="container px-4">
         <AnimatedWrapper className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight">

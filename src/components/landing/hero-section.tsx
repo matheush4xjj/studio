@@ -1,3 +1,4 @@
+'use client';
 import { Button } from '@/components/ui/button';
 import { AnimatedWrapper } from '@/components/landing/animated-wrapper';
 import Link from 'next/link';
@@ -14,7 +15,8 @@ export function HeroSection() {
         data-ai-hint="justice scale"
         priority
       />
-      <div className="absolute inset-0 bg-black/60" />
+      <div className="absolute inset-0 bg-gradient-to-t from-transparent to-black/80" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#020617]" />
       <div className="relative z-10 container px-4">
         <AnimatedWrapper>
           <h1 className="text-4xl md:text-7xl font-black text-foreground leading-tight tracking-tighter">
