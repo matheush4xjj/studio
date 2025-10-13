@@ -1,10 +1,20 @@
 import { Button } from '@/components/ui/button';
 import { AnimatedWrapper } from '@/components/landing/animated-wrapper';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export function HeroSection() {
   return (
     <section className="relative w-full h-[calc(80vh-3.5rem)] flex items-center justify-center text-center overflow-hidden">
+      <Image
+        src="https://images.unsplash.com/photo-1589216532372-1c2a36790c39?q=80&w=2070&auto=format&fit=crop"
+        alt="Background image of the scales of justice"
+        fill
+        className="object-cover"
+        data-ai-hint="justice scale"
+        priority
+      />
+      <div className="absolute inset-0 bg-black/60" />
       <div className="relative z-10 container px-4">
         <AnimatedWrapper>
           <h1 className="text-4xl md:text-7xl font-black text-foreground leading-tight tracking-tighter">
