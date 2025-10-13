@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className={cn('dark', inter.variable)}>
+    <html lang="pt-BR" className={cn('dark', inter.variable)} suppressHydrationWarning>
       <body
         className={cn(
           'font-sans antialiased bg-gradient-to-b from-[#0F172A] to-[#020617] min-h-screen'
