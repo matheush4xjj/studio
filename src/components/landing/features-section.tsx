@@ -1,8 +1,9 @@
 import {
-  BarChart,
-  FileText,
-  Presentation,
   LayoutDashboard,
+  FileText,
+  Search,
+  FileCheck2,
+  ExternalLink,
   Users,
 } from 'lucide-react';
 import { AnimatedWrapper } from './animated-wrapper';
@@ -10,40 +11,40 @@ import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 
 const features = [
   {
-    icon: <BarChart className="size-8 text-primary" />,
-    title: 'Análise de Dívida & Relatório com IA',
-    description:
-      'Consulte débitos na PGFN com um clique. Nossa IA transforma os dados em um relatório preliminar de riscos e oportunidades, pronto para impressionar seu cliente no primeiro contato.',
-    placeholder: '[INSERIR PRINT DA TELA: ANÁLISE DE DÍVIDA E RELATÓRIO IA]',
-  },
-  {
-    icon: <FileText className="size-8 text-primary" />,
-    title: 'Criação de Propostas Detalhadas',
-    description:
-      'Vá além do preliminar. Crie propostas completas com análise da CDA, estratégia jurídica, cenários de sucesso e projeções de economia, tudo em um formulário guiado e intuitivo.',
-    placeholder: '[INSERIR PRINT DA TELA: FORMULÁRIO DE CRIAÇÃO DE PROPOSTAS]',
-  },
-  {
-    icon: <Presentation className="size-8 text-primary" />,
-    title: 'Apresentações que Convertem',
-    description:
-      'Gere links para apresentações web confidenciais e interativas. Mostre seu diagnóstico e sua estratégia de forma clara, profissional e acessível para o seu cliente.',
-    placeholder:
-      '[INSERIR PRINT DA TELA: APRESENTAÇÃO PÚBLICA PARA O CLIENTE]',
-  },
-  {
     icon: <LayoutDashboard className="size-8 text-primary" />,
     title: 'Painel de Controle e Métricas',
     description:
       'Acompanhe o status de todas as suas propostas, o valor total aprovado e o progresso em relação às suas metas mensais em um dashboard centralizado.',
-    placeholder: '[INSERIR PRINT DA TELA: PAINEL PRINCIPAL/DASHBOARD]',
+  },
+  {
+    icon: <FileText className="size-8 text-primary" />,
+    title: 'Gestão de Propostas',
+    description:
+      'Crie, edite e gerencie propostas detalhadas. Gere links públicos para apresentações web profissionais e interativas que impressionam seus clientes.',
+  },
+  {
+    icon: <Search className="size-8 text-primary" />,
+    title: 'Análise de Dívida com IA',
+    description:
+      'Utilizando a API da Infosimples, consulte débitos na PGFN com um clique. Nossa IA transforma os dados em um relatório preliminar de riscos e oportunidades.',
+  },
+  {
+    icon: <FileCheck2 className="size-8 text-primary" />,
+    title: 'Emissão de CND (PGFN)',
+    description:
+      'Consulte o histórico de CNDs emitidas para um CPF ou CNPJ. A consulta é feita via API e os resultados ficam armazenados em cache por 24h para otimizar o uso.',
+  },
+  {
+    icon: <ExternalLink className="size-8 text-primary" />,
+    title: 'Acesso ao Parcelamento PGFN',
+    description:
+      'Um atalho direto para o portal Regularize da PGFN. Fornecemos as coordenadas exatas para você acessar o painel de parcelamentos e transações sem se perder.',
   },
   {
     icon: <Users className="size-8 text-primary" />,
-    title: 'Gestão de Equipe e Marca',
+    title: 'Gestão de Funcionários',
     description:
-      'Convide e gerencie os membros do seu escritório. Personalize a plataforma com o logo e as cores da sua empresa, reforçando sua identidade visual em todas as propostas.',
-    placeholder: '[INSERIR PRINT DA TELA: CONFIGURAÇÕES E FUNCIONÁRIOS]',
+      'Adicione e gerencie os membros do seu escritório. Crie links de convite com diferentes níveis de permissão (administrador ou funcionário) de forma simples e segura.',
   },
 ];
 
@@ -59,22 +60,17 @@ export function FeaturesSection() {
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <AnimatedWrapper key={index} delay={index * 100}>
-              <Card className="h-full bg-card hover:bg-card/80 transition-colors hover:shadow-2xl hover:shadow-primary/10">
+              <Card className="h-full bg-card hover:bg-card/80 transition-colors hover:shadow-2xl hover:shadow-primary/10 flex flex-col">
                 <CardHeader className="flex flex-row items-start gap-4 space-y-0">
                   <div className="flex-shrink-0">{feature.icon}</div>
                   <div className="flex-1">
                     <CardTitle className="text-lg">{feature.title}</CardTitle>
                   </div>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="flex-grow flex flex-col">
                   <p className="text-sm text-foreground/70">
                     {feature.description}
                   </p>
-                  <div className="mt-4 flex aspect-video w-full items-center justify-center rounded-md border-2 border-dashed border-border">
-                    <p className="text-xs text-muted-foreground p-4 text-center">
-                      {feature.placeholder}
-                    </p>
-                  </div>
                 </CardContent>
               </Card>
             </AnimatedWrapper>
