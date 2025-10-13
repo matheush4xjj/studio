@@ -53,10 +53,10 @@ const plans = [
   },
 ];
 
-const WHATSAPP_NUMBER = '554896410249'; // Número de WhatsApp atualizado
+const WHATSAPP_NUMBER = '554896410249';
 
-const generateWhatsAppLink = (planName: string, price: number) => {
-  const message = `Olá! Tenho interesse no Plano ${planName} do TributoHub, no valor de R$${price}/mês. Gostaria de saber mais.`;
+const generateWhatsAppLink = (planName: string) => {
+  const message = `Olá! Sou advogado(a) tributário(a) e tenho interesse em contratar o ${'Plano ' + planName} do TributoHub. Gostaria de mais informações.`;
   const encodedMessage = encodeURIComponent(message);
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
 };
@@ -125,7 +125,7 @@ export function PricingSection() {
                 <CardFooter className="p-6 mt-auto">
                   <Button asChild className="w-full" size="lg">
                     <Link
-                      href={generateWhatsAppLink(plan.name, plan.price)}
+                      href={generateWhatsAppLink(plan.name)}
                       target="_blank"
                     >
                       Escolher Plano
