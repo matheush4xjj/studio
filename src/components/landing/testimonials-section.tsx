@@ -12,9 +12,9 @@ const testimonials = [
   },
   {
     text: 'A capacidade de gerar um diagnóstico com IA na primeira reunião é um diferencial competitivo absurdo. Economiza meu tempo e estabelece autoridade imediata.',
-    author: 'Matheus Trindade',
-    title: 'Advogado Tributarista',
-    avatar: 'MT',
+    author: 'Leticia Trindade',
+    title: 'Advogada Tributarista',
+    avatar: 'LT',
     avatarImage: 'https://i.pravatar.cc/150?u=a042581f4e29026706d',
   },
 ];
