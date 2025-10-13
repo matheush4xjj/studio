@@ -7,7 +7,7 @@ export function HeroSection() {
   return (
     <section className="relative w-full h-[calc(80vh-3.5rem)] flex items-center justify-center text-center overflow-hidden">
       <Image
-        src="https://images.unsplash.com/photo-1589216532372-1c2a36790c39?q=80&w=2070&auto=format&fit=crop"
+        src="https://i.imgur.com/202IxZ3.jpeg"
         alt="Background image of the scales of justice"
         fill
         className="object-cover"
