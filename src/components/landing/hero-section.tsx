@@ -13,8 +13,9 @@ export function HeroSection() {
         </AnimatedWrapper>
         <AnimatedWrapper delay={200}>
           <p className="mt-6 max-w-2xl mx-auto text-lg md:text-xl text-foreground/80">
-            Transforme dados fiscais em propostas de valor inquestionável.
-            Apresente seu trabalho como nunca antes.
+            A plataforma que centraliza suas análises, constrói propostas de
+            alto impacto e demonstra o valor do seu trabalho de forma clara e
+            profissional
           </p>
         </AnimatedWrapper>
         <AnimatedWrapper delay={400}>
