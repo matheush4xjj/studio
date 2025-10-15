@@ -16,14 +16,6 @@ const faqs = [
         answer: "Absolutamente. Segurança é nossa prioridade. O TributoHub é construído sobre a infraestrutura segura do Google, e todas as informações são criptografadas. Os dados de consulta são usados apenas para gerar seus relatórios e não são compartilhados com ninguém. Tratamos os dados dos seus clientes com o mesmo rigor que você."
     },
     {
-        question: "Consigo personalizar as propostas com o logo e as cores do meu escritório?",
-        answer: "Sim! O TributoHub foi pensado para fortalecer a sua marca. Você pode facilmente adicionar o logo do seu escritório e personalizar as cores da apresentação final para que cada proposta tenha a identidade visual da sua advocacia."
-    },
-    {
-        question: "O que acontece se eu não gostar? Como funciona o cancelamento?",
-        answer: "Oferecemos uma garantia de satisfação de 7 dias. Se por qualquer motivo você não se adaptar, devolvemos seu dinheiro integralmente. Após esse período, o cancelamento é simples e pode ser feito a qualquer momento, sem multas ou burocracia. Você fica no controle."
-    },
-    {
         question: "Preciso de algum conhecimento técnico para usar as integrações de API?",
         answer: "Nenhum. Nós cuidamos de toda a parte técnica. Para você, a experiência é simples: digitar o CPF/CNPJ e clicar em 'Consultar'. O sistema faz todo o trabalho pesado nos bastidores."
     },
