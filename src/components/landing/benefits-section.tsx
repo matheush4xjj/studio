@@ -4,22 +4,22 @@ import { Clock, TrendingUp, ShieldCheck } from 'lucide-react';
 
 const benefits = [
   {
-    icon: <Clock className="size-10 text-primary" />,
-    title: 'Economize Horas, Não Minutos',
-    description:
-      'Automatize a coleta de dados e a geração de relatórios. O que antes levava horas de trabalho manual, agora é um diagnóstico de impacto gerado por IA em segundos.',
-  },
-  {
     icon: <TrendingUp className="size-10 text-primary" />,
-    title: 'Aumente sua Taxa de Conversão',
+    title: 'Agilidade que Gera Negócios',
     description:
-      'Impressione clientes desde o primeiro contato. Apresentações profissionais e propostas claras conectam sua estratégia ao resultado financeiro, justificando seus honorários com facilidade.',
+      'Automatize a coleta de dados com nossa API. O que levava horas de trabalho manual, agora é um diagnóstico de impacto gerado em segundos.',
   },
   {
     icon: <ShieldCheck className="size-10 text-primary" />,
-    title: 'Reforce sua Marca e Autoridade',
+    title: 'Credibilidade que Converte',
     description:
-      'Apresente seu trabalho com uma plataforma que reflete a qualidade e o profissionalismo do seu escritório. Personalize com sua logo e cores, entregando uma experiência premium.',
+      'Construída com diagnósticos de IA e propostas visuais que impressionam desde o primeiro contato, justificando seus honorários com facilidade.',
+  },
+  {
+    icon: <Clock className="size-10 text-primary" />,
+    title: 'Organização que Traz Clareza',
+    description:
+      'Centralize todas as suas análises, propostas e clientes em um único lugar, com um fluxo de trabalho claro, intuitivo e focado em resultados.',
   },
 ];
 

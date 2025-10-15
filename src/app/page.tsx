@@ -1,6 +1,8 @@
 import { Header } from '@/components/landing/header';
 import { HeroSection } from '@/components/landing/hero-section';
 import { FeaturesSection } from '@/components/landing/features-section';
+import { HowItWorksSection } from '@/components/landing/how-it-works-section';
+import { ProspectingSection } from '@/components/landing/prospecting-section';
 import { BenefitsSection } from '@/components/landing/benefits-section';
 import { TestimonialsSection } from '@/components/landing/testimonials-section';
 import { PricingSection } from '@/components/landing/pricing-section';
@@ -15,6 +17,8 @@ export default function Home() {
       <main className="flex-grow">
         <HeroSection />
         <FeaturesSection />
+        <HowItWorksSection />
+        <ProspectingSection />
         <BenefitsSection />
         <TestimonialsSection />
         <PricingSection />

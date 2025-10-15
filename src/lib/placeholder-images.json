@@ -8,27 +8,27 @@
     },
     {
       "id": "debt-analysis",
-      "description": "Screenshot of the debt analysis with AI report.",
+      "description": "Tela de análise de dívida com resultado da API da PGFN.",
       "imageUrl": "https://i.imgur.com/0LGKHmm.png",
       "imageHint": "financial report"
     },
     {
       "id": "public-presentation",
-      "description": "Screenshot da lista de propostas ou formulário.",
+      "description": "Exemplo de apresentação web pública de uma proposta gerada no TributoHub.",
       "imageUrl": "https://i.imgur.com/HATuhNX.png",
       "imageHint": "web presentation"
     },
     {
       "id": "form-solution",
-      "description": "Screenshot of the proposal form's legal solution section.",
+      "description": "Relatório de riscos e oportunidades gerado por Inteligência Artificial.",
       "imageUrl": "https://i.imgur.com/MvrqXpn.png",
-      "imageHint": "form interface"
+      "imageHint": "AI report"
     },
     {
       "id": "form-comparison",
-      "description": "Screenshot of the proposal form's before-and-after section.",
+      "description": "Painel do Regularize integrado para prospecção de clientes.",
       "imageUrl": "https://i.imgur.com/ChLLjoi.png",
-      "imageHint": "data comparison"
+      "imageHint": "client prospecting"
     },
     {
       "id": "form-investment",
