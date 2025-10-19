@@ -43,7 +43,7 @@ const features = [
   },
   {
     icon: <Trophy className="size-8 text-primary" />,
-    title: 'Gamificação e Ranking de Equipe',
+    title: 'Ranking de Equipe',
     description:
       'Incentive a alta performance com dados. Analise em tempo real qual advogado fecha mais contratos e gera mais valor, transformando métricas em insights para sua gestão. Disponível a partir do Plano Equipe.',
     imageId: 'team-ranking',
