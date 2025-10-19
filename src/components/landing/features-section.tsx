@@ -45,7 +45,7 @@ const features = [
     icon: <Trophy className="size-8 text-primary" />,
     title: 'Gamificação e Ranking de Equipe',
     description:
-      'Transforme a performance em um jogo com nosso ranking em tempo real. Acompanhe quem mais converte e gera valor, incentivando a excelência. Disponível a partir do Plano Equipe.',
+      'Incentive a alta performance com dados. Analise em tempo real qual advogado fecha mais contratos e gera mais valor, transformando métricas em insights para sua gestão. Disponível a partir do Plano Equipe.',
     imageId: 'team-ranking',
   },
   {
