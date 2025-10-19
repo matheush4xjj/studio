@@ -35,6 +35,12 @@
       "description": "Screenshot of the proposal form's investment section.",
       "imageUrl": "https://i.imgur.com/m7sBpnq.png",
       "imageHint": "pricing form"
+    },
+    {
+      "id": "team-ranking",
+      "description": "Painel de ranking de equipe para gamificação e acompanhamento de performance.",
+      "imageUrl": "https://i.imgur.com/ViAoQPE.png",
+      "imageHint": "team ranking"
     }
   ]
 }

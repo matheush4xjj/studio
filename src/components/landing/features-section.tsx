@@ -7,6 +7,7 @@ import {
   FileCheck2,
   ExternalLink,
   Users,
+  Trophy,
 } from 'lucide-react';
 import Image from 'next/image';
 import { useState } from 'react';
@@ -41,11 +42,11 @@ const features = [
     imageId: 'debt-analysis',
   },
   {
-    icon: <FileCheck2 className="size-8 text-primary" />,
-    title: 'Emissão de CND (PGFN)',
+    icon: <Trophy className="size-8 text-primary" />,
+    title: 'Gamificação e Ranking de Equipe',
     description:
-      'Consulte o histórico de CNDs emitidas para um CPF ou CNPJ. A consulta é feita via API e os resultados ficam armazenados em cache por 24h para otimizar o uso.',
-    imageId: 'form-solution',
+      'Transforme a performance em um jogo com nosso ranking em tempo real. Acompanhe quem mais converte e gera valor, incentivando a excelência. Disponível a partir do Plano Equipe.',
+    imageId: 'team-ranking',
   },
   {
     icon: <ExternalLink className="size-8 text-primary" />,
