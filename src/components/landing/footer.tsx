@@ -24,7 +24,7 @@ export function Footer() {
             aria-label="Instagram"
             className="text-muted-foreground hover:text-foreground"
           >
-            <Instagram className="size-5" />
+            <Instagram className="size-6" />
           </Link>
         </div>
         <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
