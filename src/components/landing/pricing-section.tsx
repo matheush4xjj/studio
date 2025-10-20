@@ -1,3 +1,4 @@
+
 import { Check, ArrowRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
@@ -83,44 +84,46 @@ export function PricingSection() {
     <section id="pricing" className="py-20 md:py-32">
       <div className="container px-4">
         {/* Seção de Teste Gratuito */}
-        <div className="grid md:grid-cols-2 gap-12 items-center mb-24">
-          <AnimatedWrapper>
-            <div className="text-center md:text-left">
-              <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-primary">
-                Experimente o poder da TributoHub por 3 dias.
-              </h2>
-              <p className="text-2xl md:text-3xl font-semibold mt-2">
-                Sem compromisso, sem cartão de crédito.
-              </p>
-              <p className="mt-6 text-lg text-foreground/80">
-                Tenha acesso completo às ferramentas do Plano Individual e veja
-                na prática como nossa plataforma pode transformar suas propostas
-                e otimizar seu tempo. Crie, apresente e impressione seus
-                clientes antes de decidir.
-              </p>
-              <Button asChild size="lg" className="mt-8 text-lg">
-                <Link href={generateTrialWhatsAppLink()} target="_blank">
-                  INICIAR MEU TESTE GRATUITO
-                  <ArrowRight className="ml-2 size-5" />
-                </Link>
-              </Button>
-            </div>
-          </AnimatedWrapper>
-          <AnimatedWrapper delay={200}>
-            {trialImage && (
-              <div className="relative aspect-video w-full rounded-lg overflow-hidden shadow-2xl">
-                <Image
-                  src={trialImage.imageUrl}
-                  alt={trialImage.description}
-                  fill
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover"
-                  data-ai-hint={trialImage.imageHint}
-                />
+        <AnimatedWrapper>
+          <Card className="mb-24 bg-card/40 border-primary/20 overflow-hidden">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div className="p-8 md:p-12 text-center md:text-left">
+                <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-primary">
+                  Experimente o poder da TributoHub por 3 dias.
+                </h2>
+                <p className="text-xl md:text-2xl font-semibold mt-2">
+                  Sem compromisso, sem cartão de crédito.
+                </p>
+                <p className="mt-6 text-base md:text-lg text-foreground/80">
+                  Tenha acesso completo às ferramentas do Plano Individual e veja
+                  na prática como nossa plataforma pode transformar suas propostas
+                  e otimizar seu tempo. Crie, apresente e impressione seus
+                  clientes antes de decidir.
+                </p>
+                <Button asChild size="lg" className="mt-8 text-lg">
+                  <Link href={generateTrialWhatsAppLink()} target="_blank">
+                    INICIAR MEU TESTE GRATUITO
+                    <ArrowRight className="ml-2 size-5" />
+                  </Link>
+                </Button>
               </div>
-            )}
-          </AnimatedWrapper>
-        </div>
+
+              <div className="relative w-full h-64 md:h-full min-h-[300px]">
+                {trialImage && (
+                    <Image
+                      src={trialImage.imageUrl}
+                      alt={trialImage.description}
+                      fill
+                      className="object-cover"
+                      data-ai-hint={trialImage.imageHint}
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                )}
+              </div>
+            </div>
+          </Card>
+        </AnimatedWrapper>
+        
 
         {/* Seção de Planos Pagos */}
         <AnimatedWrapper
