@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { Instagram } from 'lucide-react';
 
 export function Footer() {
   return (
@@ -9,12 +10,21 @@ export function Footer() {
             TributoHub
           </p>
         </div>
-        <div className="flex gap-4 text-sm text-muted-foreground">
+        <div className="flex items-center gap-4 text-sm text-muted-foreground">
           <Link href="#" className="hover:text-foreground">
             Termos
           </Link>
           <Link href="#" className="hover:text-foreground">
             Privacidade
+          </Link>
+          <Link
+            href="https://www.instagram.com/tributohub.oficial/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            className="text-muted-foreground hover:text-foreground"
+          >
+            <Instagram className="size-5" />
           </Link>
         </div>
         <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
