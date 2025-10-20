@@ -20,6 +20,16 @@ export function AnimatedWrapper({
     const element = ref.current;
     if (!element) return;
 
+    // Se não houver delay, a animação é imediata.
+    // Isso é útil para os componentes carregados dinamicamente que já estarão visíveis.
+    if (delay === 0 && !isVisible) {
+      const rect = element.getBoundingClientRect();
+      if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+        setIsVisible(true);
+        return;
+      }
+    }
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -41,7 +51,7 @@ export function AnimatedWrapper({
         observer.unobserve(element);
       }
     };
-  }, [delay]);
+  }, [delay, isVisible]);
 
   return (
     <div
