@@ -66,6 +66,12 @@ const generateWhatsAppLink = (planName: string) => {
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
 };
 
+const generateTrialWhatsAppLink = () => {
+  const message = `Olá, quero testar o tributo hub`;
+  const encodedMessage = encodeURIComponent(message);
+  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
+};
+
 const getImageById = (id: string): ImagePlaceholder | undefined => {
   return PlaceHolderImages.find(img => img.id === id);
 };
@@ -93,7 +99,7 @@ export function PricingSection() {
                 clientes antes de decidir.
               </p>
               <Button asChild size="lg" className="mt-8 text-lg">
-                <Link href="/cadastro">
+                <Link href={generateTrialWhatsAppLink()} target="_blank">
                   INICIAR MEU TESTE GRATUITO
                   <ArrowRight className="ml-2 size-5" />
                 </Link>
