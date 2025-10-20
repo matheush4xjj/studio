@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "hero-background",
-      "description": "Dashboard principal do TributoHub com métricas de propostas.",
-      "imageUrl": "https://i.imgur.com/vmIXVxs.png",
-      "imageHint": "dashboard metrics"
+      "description": "Tela de login do TributoHub",
+      "imageUrl": "https://i.imgur.com/hfep1lL.png",
+      "imageHint": "login screen"
     },
     {
       "id": "debt-analysis",
