@@ -1,4 +1,4 @@
-import { Check } from 'lucide-react';
+import { Check, ArrowRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import {
@@ -65,16 +65,39 @@ export function PricingSection() {
   return (
     <section id="pricing" className="py-20 md:py-32">
       <div className="container px-4">
+        {/* Seção de Teste Gratuito */}
         <AnimatedWrapper className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold tracking-tight">
-            Planos pensados para cada fase do seu escritório
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-primary">
+            Experimente o poder da TributoHub por 3 dias.
           </h2>
+          <p className='text-2xl md:text-3xl font-semibold mt-2'>
+            Sem compromisso, sem cartão de crédito.
+          </p>
+          <p className="mt-6 max-w-2xl mx-auto text-lg text-foreground/80">
+            Tenha acesso completo às ferramentas do Plano Individual e veja na
+            prática como nossa plataforma pode transformar suas propostas e
+            otimizar seu tempo. Crie, apresente e impressione seus clientes
+            antes de decidir.
+          </p>
+          <Button asChild size="lg" className="mt-8 text-lg">
+            <Link href="/cadastro">
+              INICIAR MEU TESTE GRATUITO
+              <ArrowRight className="ml-2 size-5" />
+            </Link>
+          </Button>
+        </AnimatedWrapper>
+
+        {/* Seção de Planos Pagos */}
+        <AnimatedWrapper delay={200} className="max-w-3xl mx-auto text-center mb-16">
+          <h3 className="text-2xl md:text-4xl font-bold tracking-tight">
+            Encontre o plano perfeito para escalar seu escritório
+          </h3>
         </AnimatedWrapper>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
           {plans.map((plan, index) => (
             <AnimatedWrapper
               key={index}
-              delay={index * 100}
+              delay={300 + index * 100}
               className="flex"
             >
               <Card
@@ -137,7 +160,7 @@ export function PricingSection() {
           ))}
         </div>
         <AnimatedWrapper
-          delay={300}
+          delay={600}
           className="text-center mt-12 text-foreground/70"
         >
           <p>A cada advogado adicional: +R$79/mês</p>
