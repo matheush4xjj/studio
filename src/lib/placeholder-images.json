@@ -41,6 +41,12 @@
       "description": "Painel de ranking de equipe para gamificação e acompanhamento de performance.",
       "imageUrl": "https://i.imgur.com/ViAoQPE.png",
       "imageHint": "team ranking"
+    },
+    {
+      "id": "cnd-history",
+      "description": "Tela de consulta de histórico de CND (Certidão Negativa de Débitos).",
+      "imageUrl": "https://i.imgur.com/g8vBawT.png",
+      "imageHint": "certificate history"
     }
   ]
 }

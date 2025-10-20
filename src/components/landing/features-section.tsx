@@ -42,6 +42,13 @@ const features = [
     imageId: 'debt-analysis',
   },
   {
+    icon: <FileCheck2 className="size-8 text-primary" />,
+    title: 'Consulta de Histórico de CND',
+    description:
+      'Acesse o histórico de Certidões Negativas de Débito para entender a regularidade fiscal do cliente ao longo do tempo e identificar padrões importantes.',
+    imageId: 'cnd-history',
+  },
+  {
     icon: <Trophy className="size-8 text-primary" />,
     title: 'Ranking de Equipe',
     description:
