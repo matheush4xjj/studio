@@ -67,7 +67,7 @@ const generateWhatsAppLink = (planName: string) => {
 };
 
 const generateTrialWhatsAppLink = () => {
-  const message = `Olá, quero testar o tributo hub`;
+  const message = `Olá! Sou advogado(a) tributário(a) e tenho interesse em iniciar o teste gratuito do TributoHub. Gostaria de receber meu acesso.`;
   const encodedMessage = encodeURIComponent(message);
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
 };
