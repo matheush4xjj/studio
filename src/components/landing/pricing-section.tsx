@@ -88,7 +88,7 @@ export function PricingSection() {
           <Card className="mb-24 bg-card/40 border-primary/20 overflow-hidden">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div className="p-8 md:p-12 text-center md:text-left">
-                <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-primary">
+                <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-primary">
                   Experimente o poder da TributoHub por 3 dias.
                 </h2>
                 <p className="text-xl md:text-2xl font-semibold mt-2">
@@ -100,7 +100,7 @@ export function PricingSection() {
                   e otimizar seu tempo. Crie, apresente e impressione seus
                   clientes antes de decidir.
                 </p>
-                <Button asChild size="lg" className="mt-8 text-lg">
+                <Button asChild size="lg" className="mt-8 text-lg bg-accent-2 text-accent-2-foreground hover:bg-accent-2/90">
                   <Link href={generateTrialWhatsAppLink()} target="_blank">
                     INICIAR MEU TESTE GRATUITO
                     <ArrowRight className="ml-2 size-5" />
